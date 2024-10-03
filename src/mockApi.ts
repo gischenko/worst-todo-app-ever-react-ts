@@ -41,3 +41,18 @@ export function removeTodo(id: string): Promise<boolean> {
     }, 500);
   });
 }
+
+// Function to toggle the completion status of a todo
+export function toggleTodoCompletion(id: string): Promise<TodoItem | null> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const todo = todos.find(todo => todo.id === id);
+      if (todo) {
+        todo.completed = !todo.completed;
+        resolve(todo);
+      } else {
+        resolve(null);
+      }
+    }, 500);
+  });
+}
