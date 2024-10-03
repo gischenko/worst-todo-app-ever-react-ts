@@ -3,6 +3,8 @@ import { useQuery, useMutation } from '@tanstack/react-query';
 import { fetchTodos, addTodo, TodoItem, removeTodo } from '../mockApi';
 import './ToDoList.css';
 
+// We forgot to implement "marking todo as done"
+// Ask someone else.
 function TodoList() {
   const { data: fetchedTodos, isSuccess } = useQuery({
     queryKey: ['todos'],
