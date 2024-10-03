@@ -1,0 +1,57 @@
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+ol {
+  padding-left: 16px;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.removeButton {
+  display: inline;
+  color: red;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 15px;
+}
+
+#todo-input {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.ADDtoDoWrapper {
+  margin-top: 10px;
+  display: flex;
+  width: 300px;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
