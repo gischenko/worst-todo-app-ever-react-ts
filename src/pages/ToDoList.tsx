@@ -53,11 +53,11 @@ function TodoList() {
           <li key={Math.random()}>{todo.text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div onClick={() => ClickRemoveTodo(todo.id)} className="removeButton">ⓧ</div></li>
         ))}
       </ol>
-      <div className="ADDtoDoWrapper">
+      <div style={{ marginTop: '10px', display: 'flex', width: '300px' }}>
         <input id="todo-input" type="text" placeholder="Add a new todo" />
         <div onClick={ClickAddTodo} className='button'>Add</div>
       </div>
-    </div>
+    </div >
   );
 }
 
